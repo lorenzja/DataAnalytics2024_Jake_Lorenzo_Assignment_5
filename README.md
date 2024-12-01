@@ -5,6 +5,8 @@ Part 1:
 A. Describe the type of patterns or trends you might look for and how you plan to explore 
 and model them. (Min. 3 sentences)
 
+I would look for patterns related to sales price and see which factors most signifacantly influence it. To do this I would perform a multivariate linear model to see which factor/feature most signifacantly infleunces Sale Price. I could also look to see if there is any fluctuation in sales price related to time. That could potentially give insight into the NYC housing market's seasonal trends or strength of the market as a whole. I could plan to explore this my filtering the dataset by time and see if that gives me any significant data.
+
 B. Perform exploratory data analysis (variable distributions, etc.) and describe what you 
 did including plots and other descriptions. Identify the outlier values in the data for Sale 
 Price and generate suitable plots to demonstrate the outliers relative to the other data 
