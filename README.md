@@ -5,12 +5,14 @@ Part 1:
 A. Describe the type of patterns or trends you might look for and how you plan to explore 
 and model them. (Min. 3 sentences)
 
-I would look for patterns related to sales price and see which factors most signifacantly influence it. To do this I would perform a multivariate linear model to see which factor/feature most signifacantly infleunces Sale Price. I could also look to see if there is any fluctuation in sales price related to time. That could potentially give insight into the NYC housing market's seasonal trends or strength of the market as a whole. I could plan to explore this my filtering the dataset by time and see if that gives me any significant data.
+I would look for patterns related to sales price and see which factors most signifacantly influence it. To do this I would perform a multivariate linear model to see which factor/feature most signifacantly infleunces Sale Price. I could also look to see if there is any fluctuation in sales price related to time. That could potentially give insight into the NYC housing market's seasonal trends or strength of the market as a whole. I could plan to explore this my filtering the dataset by time and see if that gives me any significant data. 
 
 B. Perform exploratory data analysis (variable distributions, etc.) and describe what you 
 did including plots and other descriptions. Identify the outlier values in the data for Sale 
 Price and generate suitable plots to demonstrate the outliers relative to the other data 
 points. (Min. 5 sentences) 
+
+I began by doing preliminery data preprocessing including filtering the dataset down to one borough (Manhattan). I then removed zero values, NA values, and -0 values. These values will create errors (negative infinity) later in the code when converting data columns to log base 10 form for input into the linear model. I then removed several columns from the dataset that I felt would not be relevant, as well as, transformed several feature columns to either factor form or numerical form depending on if the feature was categorical or not. I then split the data into X and Y for plotting. I created some preliminery plots for X and Y as well as combining X and Y to create a pairs.panels plot and a ggplot depicting Sales Price in comparison to GROSS SQUARE FEET. From these plots I was able to identify outliers in the Sales Price column which resulted in removing rows from the dataset that contained a Sales Price values less than 1,000 or greater than 1 Billion.
 
 C. Conduct Multivariate Regression on the 1 borough dataset to predict the Sale Price 
 using other variables that may have a meaningful connection to price. After you identify a 
