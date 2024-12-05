@@ -29,9 +29,9 @@ classification problem using the data. You may choose which categorical variable
 neighborhood, building class) to use as class label. Evaluate the results (contingency 
 tables & metrics). Describe any cleaning you had to do and why. (Min. 5 sentences)
 
-WAS WHAT I DID WITH THE SVM MODEL LINEAR KERNAL A CLASSIFICATION PROBLEM??
+I initially ran a SVM model with a 
 
-I decided to use a SVM model with a linear kernal. Some of the data cleaning I did including not convert several of the columns to log base 10 form as I did with the linear model above. I also removed the `factor` columns from the dataset as I was running into errors when running the SVM model. Once I ran the SVM model I used it on the test set and plotted the predicted vs expected values for SALE PRICE. I also calculated error values and got MAE of 6,504,591.3, MSE of 339026495410061, and RMSE of 18412672.14. As seen from the calculated errors as well as the plot of predicted vs expected values there are some outliers in the dataset that are still affecting the model. This is the reason for the MSE being so high because this error calculation is more sensitive to outliers. I was unable to run a tuned SVM model to optimize the model due to my computer being very old and the model never being able to load. Although the tuned SVM model would only help so much and to really increase the accuracy of the model I would need to further process and remove outliers from the dataset. 
+The second supervised learning model I used was a KNN model. I decided to use the same as above and try to predict LOT based on the information from the other columns. I took the square root of the number of observations in the dataset and used 67 as my k value. I then ran the model and got "Accuracy: 0.145724907063197". I than ran a model to use different values of k to iterate through the model and see which one gave the most accurate score. k = 67 was the most accurate k from the ones I tested. This is a very low accuracy score and would indicate same as the model above that there are still outliers remaining in the dataset.
 
 
 Part 2:
