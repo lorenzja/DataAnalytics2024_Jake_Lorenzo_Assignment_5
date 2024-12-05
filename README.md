@@ -29,6 +29,11 @@ classification problem using the data. You may choose which categorical variable
 neighborhood, building class) to use as class label. Evaluate the results (contingency 
 tables & metrics). Describe any cleaning you had to do and why. (Min. 5 sentences)
 
+WAS WHAT I DID WITH THE SVM MODEL LINEAR KERNAL A CLASSIFICATION PROBLEM??
+
+I decided to use a SVM model with a linear kernal. Some of the data cleaning I did including not convert several of the columns to log base 10 form as I did with the linear model above. I also removed the `factor` columns from the dataset as I was running into errors when running the SVM model. Once I ran the SVM model I used it on the test set and plotted the predicted vs expected values for SALE PRICE. I also calculated error values and got MAE of 6,504,591.3, MSE of 339026495410061, and RMSE of 18412672.14. As seen from the calculated errors as well as the plot of predicted vs expected values there are some outliers in the dataset that are still affecting the model. This is the reason for the MSE being so high because this error calculation is more sensitive to outliers. I was unable to run a tuned SVM model to optimize the model due to my computer being very old and the model never being able to load.
+
+
 Part 2:
 
 A. Apply the best performing regression model(s) from 1.c to predict Sale Price based on 
