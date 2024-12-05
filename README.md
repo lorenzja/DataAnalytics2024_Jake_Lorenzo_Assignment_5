@@ -21,6 +21,8 @@ criteria of your choice, such as building class or sq footage value) and compare
 you obtained. You may have to try multiple models and drop variables with very low 
 significance. Explain the results. (Min. 5 sentences) 
 
+I ran into trouble using 'factor' variables when using the linear model. I had a lot of errors regarding 'differing levels' when plotting predicted vs expected Sale Price. I was able to remedy this situation by training the linear model on the entire dataset and then testing the accuracy on the test set. this led me to get a r-squared of 1 and an adjusted r-squared of 1 with the plot as a perfect straight line. This led me to remove all of the 'factor' variables from the model and only use "GROSS SQUARE FEET, LAND SQUARE FEET, YEAR BUILT, and TOTAL UNTIS. After running the initial model I conducted outlier removal by removing very large or small values from the SALE PRICE and GROSS SQUARE FEET columns. This led me to getting a Multiple R-squared:  0.2346,	Adjusted R-squared:  0.2336. This could be improved with further refinement of the model and further outlier processing and removals.
+
 D. Pick more than one supervised learning model (these need not be restricted to the 
 models you’ve learned so far), e.g., Naïve Bayes, k-NN, Random Forest, SVM to explore a 
 classification problem using the data. You may choose which categorical variable (e.g. 
