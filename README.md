@@ -26,7 +26,7 @@ I ran into trouble using 'factor' variables when using the linear model. I had a
 D. Pick more than one supervised learning model (these need not be restricted to the 
 models you’ve learned so far), e.g., Naïve Bayes, k-NN, Random Forest, SVM to explore a 
 classification problem using the data. You may choose which categorical variable (e.g. 
-neighborhood, building class) to use as class label. Evaluate the results (contingency 
+neighborhood, building class) to use as class label. Evaluate the results (contingency  
 tables & metrics). Describe any cleaning you had to do and why. (Min. 5 sentences)
 
 I initially ran a SVM classification model with a linear kernal to predict LOT based on the data from the other columns. I initially tried to get the recall, precision, and f1 scores of the model but it returned those scores for each unique level of LOT(of which there were thousands). I then computed the accuracy score of the model which was  "Accuracy: 0.581899298916507." This was a higher accuracy score than the KNN model however the accuracy score still isn't very high which means that outliers remain in the dataset. Additionally running a tuned SVM model would hopefully increase the model's accuracy score however my computer does not have the processing power to do that in any normal amount of time.
