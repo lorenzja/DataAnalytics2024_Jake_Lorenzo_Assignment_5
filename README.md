@@ -40,6 +40,8 @@ A. Apply the best performing regression model(s) from 1.c to predict Sale Price 
 the variables you chose. Plot the predictions and residuals. Explain how well (or not) the 
 models generalize to the whole dataset and speculate as to the reason. (Min. 3-4 sentences)
 
+I chose the multivariate linear model that I used above with "GROSS SQUARE FEET, LAND SQUARE FEET, YEAR BUILT, and TOTAL UNTIS" as the columns used to predict Sale Price and applyed it to the entire NYC dataset with all five boroughs. I did similar outlier removal of SALE PRICE > 75,000,000 and GROSS SQUARE FEET > 50,000 as well as feature plotting.  Multiple R-squared:  0.3934,	Adjusted R-squared:  0.3934. Looking at the R-squared values as well as plotting the linear model and its predicted vs expected values there are definetely still some outlier values that are leveraging the model. Further data munging would be required to find those values and remove them to create a more accurate model. Overall the model does not generalize the data as a whole very well and I think this is due to several factors: diversity of real estate in NYC (square footage is not always synonmous with price i.e. penthouse apartment) and there could be the presence of multicollinearity in the data.
+
 B. Apply the classification model(s) from 1.d to predict the categorical variable of your 
 choice. Evaluate the results (contingency tables & metrics). Explain how well (or not) the 
 models generalize to the whole dataset and speculate as to the reason. (Min. 3-4 sentences)
