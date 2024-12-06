@@ -51,6 +51,8 @@ I tried to apply the SVM model that I did above to the entire dataset but got th
 C.  Discuss any observations you had about the datasets/ variables, other data in the 
 dataset and/or your confidence in the result. (Min 1-2 sentences)
 
+The dataset had a lot of noise and dimmensionality issues. I think that the data modeling I did was good to get a picture of the dataset as a whole and the interactions between differnt factors, however I do think that a deep dive into the data munging aspect of cleaning out the data would be the best way to optimize the various models so that they can give meaningful results with a fairly high accuracy. There is definitely a correlation between the square foot aspect and sale price although due to outliers (i am assuming from high price low square-feet penthouse apartments). Definitely a medium to high correlation betwwen LOT & BLOCK & ZIP CODE and Sale Price. Also the high correlation between LOT & BLOCK & ZIP CODE could lead to a multicollinearity effect that could affect the accuracy of the models. I would also assume a correlation between year built and sale price  with newer buildings having a positive effect on sale price. Inversely however I would think that certain historic older buildings would fetch a higher sell price as well. 
+
 Part 3 (Grad Level):
 Draw conclusions from this study – about the model type and 
 suitability/ deficiencies. Describe what worked and why/ why not. (Min. 6-7 sentences)
