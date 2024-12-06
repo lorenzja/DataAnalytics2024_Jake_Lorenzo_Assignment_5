@@ -57,3 +57,5 @@ Part 3 (Grad Level):
 Draw conclusions from this study – about the model type and 
 suitability/ deficiencies. Describe what worked and why/ why not. (Min. 6-7 sentences)
 
+Comparing the three models used above (Linear, SVM, and KNN), it would appear that the linear model and SVM (linear kernal) performed the best with the possibiility of optimizing both further by performing additional outlier detection/removal and model tuning. A regression analysis would be desired over a classification model due to the prediction/use of continuous numerical values (Sale Price). 
+
