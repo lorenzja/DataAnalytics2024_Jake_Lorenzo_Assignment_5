@@ -17,7 +17,7 @@ I began by doing preliminery data preprocessing including filtering the dataset 
 C. Conduct Multivariate Regression on the 1 borough dataset to predict the Sale Price 
 using other variables that may have a meaningful connection to price. After you identify a 
 well-performing model test it on 2 subsets of 1 borough dataset (based on meaningful 
-criteria of your choice, such as building class or sq footage value) and compare the results 
+criteria of your choice, such as building class or sq footage value) and compare the results  
 you obtained. You may have to try multiple models and drop variables with very low 
 significance. Explain the results. (Min. 5 sentences) 
 
