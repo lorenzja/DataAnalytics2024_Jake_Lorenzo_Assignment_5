@@ -46,6 +46,8 @@ B. Apply the classification model(s) from 1.d to predict the categorical variabl
 choice. Evaluate the results (contingency tables & metrics). Explain how well (or not) the 
 models generalize to the whole dataset and speculate as to the reason. (Min. 3-4 sentences)
 
+I tried to apply the SVM model that I did above to the entire dataset but got the following error due to the size of the dataset. > svm.mod0 <- svm(`LOT` ~ ., data = train, kernel = 'linear') Error: cannot allocate vector of size 13.6 Gb. Due to this I decided to use the much less accurate KNN model from above and apply it to the entire NYC dataset. I decided to take the square root of the training set and made the inital k = 369 which gave a very low initial Accuracy: 0.0158472928252192. I then iterated several times through a multitude of different values of k and decided the most accurate was k = with an .
+
 C.  Discuss any observations you had about the datasets/ variables, other data in the 
 dataset and/or your confidence in the result. (Min 1-2 sentences)
 
